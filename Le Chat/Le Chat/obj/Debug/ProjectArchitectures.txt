@@ -1,0 +1,1 @@
+S:\Projects\Windows Phone\Le Chat\Le Chat\Le Chat.csproj;neutral

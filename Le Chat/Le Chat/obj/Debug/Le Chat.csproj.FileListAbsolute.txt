@@ -1,0 +1,58 @@
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\App.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\MainPage.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Le Chat.xr.xml
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Le Chat.exe
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Le Chat.pdb
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\resources.pri
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\AppxManifest.xml
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Le Chat.build.appxrecipe
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\App.g.i.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\App.g.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\MainPage.g.i.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\MainPage.g.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\XamlTypeInfo.g.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\App.xaml
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\MainPage.xaml
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\App.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\MainPage.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\XamlSaveStateFile.xml
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\Le Chat.exe
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\Le Chat.pdb
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\priconfig.xml
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\priconfig.xml.intermediate
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\layout.resfiles
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\layout.resfiles.intermediate
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\resources.resfiles
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\resources.resfiles.intermediate
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\pri.resfiles
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\pri.resfiles.intermediate
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\qualifiers.txt
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\qualifiers.txt.intermediate
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\ProjectArchitectures.txt
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Newtonsoft.Json.dll
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Newtonsoft.Json.xml
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\Le Chat.csprojResolveAssemblyReference.cache
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\Le Chat.csproj.GenerateResource.Cache
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\XamlAnimatedGif.dll
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\register.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\register.g.i.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\register.g.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\register.xaml
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\register.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\chatIF.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\chatIF.g.i.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\chatIF.g.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\chatIF.xaml
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\chatIF.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\privateRoom.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\privateRoom.g.i.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\privateRoom.g.cs
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\privateRoom.xaml
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\privateRoom.xbf
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Coding4Fun.Toolkit.Controls.dll
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Coding4Fun.Toolkit.dll
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Coding4Fun.Toolkit.pri
+S:\Projects\Windows Phone\Le Chat\Le Chat\bin\Debug\Coding4Fun.Toolkit.Controls.pri
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\Coding4Fun.Toolkit.pri.xml
+S:\Projects\Windows Phone\Le Chat\Le Chat\obj\Debug\Coding4Fun.Toolkit.Controls.pri.xml

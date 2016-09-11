@@ -1,0 +1,179 @@
+﻿<Page
+    x:Class="Le_Chat.chatIF"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Le_Chat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar  Name="dashBar" Background="Black">
+            <AppBarButton x:Name="NewConv" Icon="Add" Label="New Convesation"/>
+            <AppBarButton x:Name="NewFriend" Icon="Add" Label="Find Friend" Click="NewFriend_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid x:Name="pivotView">
+            <Pivot Name="chatDash" Title="Le Chat" SelectionChanged="Pivot_SelectionChanged">
+                <PivotItem Header="Recent    " Margin="0,0,0,0">
+                    <ListView x:Name="recents" ItemClick="recents_ItemClick" IsItemClickEnabled="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Height="85">
+                                    <TextBlock x:Name="name" FontSize="40" HorizontalAlignment="Left" Text="{Binding path}" Style="{StaticResource ListViewItemContentTextBlockStyle}" Margin="10,0,0,0"/>
+                                    <TextBlock x:Name="msg" FontSize="25" HorizontalAlignment="Left" Text="{Binding msg}" Style="{StaticResource SubheaderTextBlockStyle}" Margin="20,0,0,0"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </PivotItem>
+                <PivotItem Header="Groups    " Margin="0,0,0,0">
+                    <Grid/>
+                </PivotItem>
+                <PivotItem Header="Friends    " Margin="0,0,0,0">
+                    <ListView x:Name="friends" HorizontalAlignment="Left" Height="528" Margin="0,0,0,0" VerticalAlignment="Top" Width="400" ItemClick="friends_ItemClick" IsItemClickEnabled="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid HorizontalAlignment="Left" Height="51" Margin="0,0,0,0" VerticalAlignment="Top" Width="400">
+                                    <TextBlock x:Name="name" TextWrapping="Wrap" Text="{Binding name}" Margin="50,0,0,0" FontSize="30"/>
+                                    <Image x:Name="offline" HorizontalAlignment="Left" Height="49" Margin="8,0,0,2" VerticalAlignment="Bottom" Width="37" Source="person-icon-blue-12.png" Visibility="{Binding offImage}"/>
+                                    <Image x:Name="online" HorizontalAlignment="Left" Height="49" Margin="8,0,0,2" VerticalAlignment="Bottom" Width="37" Source="user.png" Visibility="{Binding onImage}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </PivotItem>
+            </Pivot>
+            <Button x:Name="rbutton" Width="75" MinWidth="0" MinHeight="0" BorderThickness="0" Margin="336,-5,-11,0" Height="57" VerticalAlignment="Top">
+                <Button.Resources>
+                    <Thickness x:Key="PhoneBorderThickness">2.5</Thickness>
+                    <FontFamily x:Key="PhoneFontFamilyNormal">Segoe WP</FontFamily>
+                    <FontWeight x:Key="PhoneButtonFontWeight">Semibold</FontWeight>
+                    <x:Double x:Key="TextStyleLargeFontSize">18.14</x:Double>
+                    <Thickness x:Key="PhoneButtonContentPadding">9.5,0,9.5,3.5</Thickness>
+                    <x:Double x:Key="PhoneButtonMinHeight">57.5</x:Double>
+                    <x:Double x:Key="PhoneButtonMinWidth">109</x:Double>
+                    <Thickness x:Key="PhoneTouchTargetOverhang">0,9.5</Thickness>
+                    <SolidColorBrush x:Key="ButtonDisabledBackgroundThemeBrush" Color="Transparent"/>
+                    <Style x:Key="transparentButton" TargetType="Button">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="BorderBrush" Value="{ThemeResource PhoneForegroundBrush}"/>
+                        <Setter Property="Foreground" Value="{ThemeResource PhoneForegroundBrush}"/>
+                        <Setter Property="BorderThickness" Value="{ThemeResource PhoneBorderThickness}"/>
+                        <Setter Property="FontFamily" Value="{ThemeResource PhoneFontFamilyNormal}"/>
+                        <Setter Property="FontWeight" Value="{ThemeResource PhoneButtonFontWeight}"/>
+                        <Setter Property="FontSize" Value="{ThemeResource TextStyleLargeFontSize}"/>
+                        <Setter Property="Padding" Value="{ThemeResource PhoneButtonContentPadding}"/>
+                        <Setter Property="MinHeight" Value="{ThemeResource PhoneButtonMinHeight}"/>
+                        <Setter Property="MinWidth" Value="{ThemeResource PhoneButtonMinWidth}"/>
+                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Grid x:Name="Grid" Background="Transparent">
+                                        <VisualStateManager.VisualStateGroups>
+                                            <VisualStateGroup x:Name="CommonStates">
+                                                <VisualStateGroup.Transitions>
+                                                    <VisualTransition From="Pressed" To="PointerOver">
+                                                        <Storyboard>
+                                                            <PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
+                                                        </Storyboard>
+                                                    </VisualTransition>
+                                                    <VisualTransition From="PointerOver" To="Normal">
+                                                        <Storyboard>
+                                                            <PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
+                                                        </Storyboard>
+                                                    </VisualTransition>
+                                                    <VisualTransition From="Pressed" To="Normal">
+                                                        <Storyboard>
+                                                            <PointerUpThemeAnimation Storyboard.TargetName="Grid"/>
+                                                        </Storyboard>
+                                                    </VisualTransition>
+                                                </VisualStateGroup.Transitions>
+                                                <VisualState x:Name="Normal"/>
+                                                <VisualState x:Name="PointerOver"/>
+                                                <VisualState x:Name="Pressed">
+                                                    <Storyboard>
+                                                        <PointerDownThemeAnimation Storyboard.TargetName="Grid"/>
+                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonPressedForegroundThemeBrush}"/>
+                                                        </ObjectAnimationUsingKeyFrames>
+                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
+                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+                                                        </ObjectAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                </VisualState>
+                                                <VisualState x:Name="Disabled">
+                                                    <Storyboard>
+                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledForegroundThemeBrush}"/>
+                                                        </ObjectAnimationUsingKeyFrames>
+                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="Border">
+                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBorderThemeBrush}"/>
+                                                        </ObjectAnimationUsingKeyFrames>
+                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="Border">
+                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonDisabledBackgroundThemeBrush}"/>
+                                                        </ObjectAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                </VisualState>
+                                            </VisualStateGroup>
+                                        </VisualStateManager.VisualStateGroups>
+                                        <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Margin="{ThemeResource PhoneTouchTargetOverhang}">
+                                            <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                        </Border>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+                <Button.Style>
+                    <StaticResource ResourceKey="transparentButton"/>
+                </Button.Style>
+                <Grid x:Name="request" Width="47">
+                    <Image Source="Assets/Icons/addFriend.png" Width="30" HorizontalAlignment="Left"/>
+                    <TextBlock x:Name="nrequest" Margin="28,-4,0,0" TextAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <Button.Flyout>
+                    <Flyout x:Name="requestFlyout">
+                        <ListView x:Name="requestListView">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Width="400">
+                                        <TextBlock Text="{Binding name}" FontSize="30" VerticalAlignment="Center" Margin="0,0,45,0"/>
+                                        <AppBarButton x:Name="accept" Icon="Accept" HorizontalAlignment="Right" Margin="0,0,45,0" Click="accept_Click"/>
+                                        <AppBarButton x:Name="cancel" Icon="Cancel" HorizontalAlignment="Right" Click="cancel_Click"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+        </Grid>
+        <Grid Visibility="Collapsed" x:Name="searchFriend">
+            <TextBox x:Name="friendname" HorizontalAlignment="Left" Margin="10,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331"/>
+            <Button x:Name="button" HorizontalAlignment="Left" Margin="346,27,0,0" VerticalAlignment="Top" Width="44" MinWidth="0" Click="button_Click">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/Icons/search_icon.png"/>
+                </Button.Background>
+            </Button>
+            <ListView x:Name="fList" HorizontalAlignment="Left" Height="552" Margin="10,81,0,-53" VerticalAlignment="Top" Width="380" SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="White" BorderThickness="0,0,0,2.5" Margin="0,0,0,0" Width="400">
+                            <Grid>
+
+                                <AppBarButton Tag="addMe" Margin="-11,-2,0,0" Icon="AddFriend" Label="{Binding status}" Click="AppBarButton_Click"/>
+                                <TextBlock x:Name="friendName" HorizontalAlignment="Left" Margin="53,16,0,0" TextWrapping="Wrap" Text="{Binding name}" VerticalAlignment="Top" FontSize="26.667"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </Grid>
+</Page>

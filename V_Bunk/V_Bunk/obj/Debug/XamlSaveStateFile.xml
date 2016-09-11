@@ -1,7 +1,0 @@
-<XamlCompilerSaveState>
-  <ReferenceAssemblyList>
-    <LocalAssembly PathName="s:\projects\windows phone\v_bunk\v_bunk\obj\debug\intermediatexaml\v_bunk.exe" HashGuid="50dd2d0b-39e1-e176-b927-b7a621157b81" />
-    <ReferenceAssembly PathName="s:\projects\windows phone\v_bunk\packages\newtonsoft.json.9.0.1\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="424e6aa8-ba94-c678-e707-af9fe9838e1a" />
-    <ReferenceAssembly PathName="s:\projects\windows phone\v_bunk\packages\xamlanimatedgif.1.1.3\lib\portable-win81+wpa81\xamlanimatedgif.dll" HashGuid="6ba9dc30-72ac-261f-d8ba-25d4e1430d55" />
-  </ReferenceAssemblyList>
-</XamlCompilerSaveState>
