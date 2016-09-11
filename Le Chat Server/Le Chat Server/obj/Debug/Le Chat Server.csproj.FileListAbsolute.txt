@@ -11,3 +11,6 @@ S:\Projects\Windows Form\Le Chat Server\Le Chat Server\bin\Debug\Newtonsoft.Json
 S:\Projects\Windows Form\Le Chat Server\Le Chat Server\bin\Debug\Newtonsoft.Json.xml
 S:\Projects\Windows Form\Le Chat Server\Le Chat Server\obj\Debug\Le_Chat_Server.Form1.resources
 S:\Projects\Windows Form\Le Chat Server\Le Chat Server\bin\Debug\MySql.Data.dll
+S:\Projects\LeChat-Git\Le Chat Server\Le Chat Server\bin\Debug\Le Chat Server.exe.config
+S:\Projects\LeChat-Git\Le Chat Server\Le Chat Server\obj\Debug\Le Chat Server.exe
+S:\Projects\LeChat-Git\Le Chat Server\Le Chat Server\obj\Debug\Le Chat Server.pdb

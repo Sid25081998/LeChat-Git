@@ -77,12 +77,12 @@ namespace Le_Chat_Server
                 Data received = getData(readByte);
                 switch (received.cmd)
                 {
-                    case "Login":
+                    case "Login":  //LOGIN REQUEST FROM THE CLIENT
                         Login checkUser = JsonConvert.DeserializeObject<Login>(received.message);
                         string r = await getUserInformationAsync(Tuple.Create(checkUser.username, checkUser.password), mySocket);
                         send(received.cmd, r, mySocket);
                         break;
-                    case "Register":
+                    case "Register": //REGISTER REQUEST FROM THE CLIENT
                         newsignup newUser = JsonConvert.DeserializeObject<newsignup>(received.message);
                         user newUsr = new user();
                         register(newUser, newUsr);
@@ -97,15 +97,15 @@ namespace Le_Chat_Server
                         }
                         break;
                     case "allFriends":
-                            send(received.cmd, getFriends(mySocket), mySocket);
+                            send(received.cmd, getFriends(mySocket), mySocket); //GET MY FRIENDS REQUEST FROM THE CLIENT
                         break;
-                    case "findFriend":
+                    case "findFriend":  //SEARCH A FRRIEND 
                         string friendname = received.message;
                         List<string> fList = new List<string>();
                         findFriend(friendname, fList,mySocket);
                         send(received.cmd, JsonConvert.SerializeObject(fList), mySocket);
                         break;
-                    case "addFriend":
+                    case "addFriend": // SNED FRIEND REQUEST TO THE GIVEN NAME
                         addFriend(received.message, mySocket);
                         send("addFriend", received.message, mySocket);
                         Socket myNewfriend = getSocketByName(received.message);
@@ -115,10 +115,10 @@ namespace Le_Chat_Server
                             send("getRequests", JsonConvert.SerializeObject(userList[myNewfriend].requests), myNewfriend);
                         }
                         break;
-                    case "getRequests":
+                    case "getRequests":  // GET MY FRIEND REQUESTS
                         send(received.cmd, JsonConvert.SerializeObject(userList[mySocket].requests),mySocket);
                         break;
-                    case "txtMsg":
+                    case "txtMsg": // SEND A TEXT MESSAGE TO MY FRIEND AND SAVE IT TO DATABASE
                         textMessage text = JsonConvert.DeserializeObject<textMessage>(received.message);
                         try
                         {
@@ -133,19 +133,15 @@ namespace Le_Chat_Server
                         user me = userList[mySocket];
                         saveMyText(text.path,text.msg, me);
                         break;
-                    case "getMessage":
+                    case "getMessage": //GET MY CONVERSATION HISTORY WITH THE GIVEN FRIEND
                         List <textMessage> msgs = new List<textMessage>();
-                        /*msgs.Add(new textMessage { path = "pipun", msg = "Hello" });
-                        msgs.Add(new textMessage { path = "sparsha", msg = "Hey Dude" });
-                        msgs.Add(new textMessage { path = "pipun", msg = "How are you" });
-                        msgs.Add(new textMessage { path = "sparsha", msg = "fine Bro hgcdjydvjydcrdrsrjjdcrddvtvdjytdcyrsxrectyeytjvtrcytexjyreec6vr6rvk6rcecjcyeyrjrcdn" });*/
                         getMyConversations(received.message, userList[mySocket], msgs);
                         send(received.cmd, JsonConvert.SerializeObject(msgs), mySocket);
                         break;
-                    case "terminate":
+                    case "terminate": //ANDROID CLIENT EXCEPTION :   IGNORE
                         send("terminate", "Wish You get it soon", mySocket);
                         break;
-                    case "requestapproval":
+                    case "requestapproval": // RESPONSE TO A REQUEST 
                         Friendrequest response = JsonConvert.DeserializeObject<Friendrequest>(received.message);
                         if (response.status == "accept")
                         {
@@ -160,7 +156,7 @@ namespace Le_Chat_Server
                         }
                         break;
                 }
-                addLog(received.cmd + " from " + userList[mySocket].name);
+                addLog(received.cmd + " from " + userList[mySocket].name); // ADD THE COMMAND SENT BY THE USER
                 beginReceive(mySocket);
             }
             catch(Exception e)
