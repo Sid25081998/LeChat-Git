@@ -1,0 +1,13 @@
+c:\users\sid\documents\visual studio 2015\Projects\Le Chat Server\Le Chat Server\bin\Debug\Le Chat Server.exe.config
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\bin\Debug\Le Chat Server.exe.config
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\bin\Debug\Le Chat Server.exe
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\bin\Debug\Le Chat Server.pdb
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\obj\Debug\Le Chat Server.csprojResolveAssemblyReference.cache
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\obj\Debug\Le_Chat_Server.Properties.Resources.resources
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\obj\Debug\Le Chat Server.csproj.GenerateResource.Cache
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\obj\Debug\Le Chat Server.exe
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\obj\Debug\Le Chat Server.pdb
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\bin\Debug\Newtonsoft.Json.dll
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\bin\Debug\Newtonsoft.Json.xml
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\obj\Debug\Le_Chat_Server.Form1.resources
+S:\Projects\Windows Form\Le Chat Server\Le Chat Server\bin\Debug\MySql.Data.dll
