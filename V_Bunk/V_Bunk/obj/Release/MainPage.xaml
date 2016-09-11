@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="V_Bunk.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:V_Bunk"
+    xmlns:gif="using:XamlAnimatedGif"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="Main" Margin="0,0.333,0,533.667">
+        <TextBlock x:Name="appName" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="V Bunk" VerticalAlignment="Top" Height="22" Width="68" FontSize="20"/>
+        <TextBlock x:Name="regBlock" HorizontalAlignment="Left" Margin="10,17,0,0" TextWrapping="Wrap" Text="Registration No." VerticalAlignment="Top" Height="65" Width="315" FontSize="40" FontFamily="Javanese Text"/>
+        <TextBox x:Name="regBox" HorizontalAlignment="Left" Margin="10,87,0,-29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380" Height="48" FontSize="26.667"/>
+        <TextBlock x:Name="passBlock" HorizontalAlignment="Left" Margin="10,140,0,-99" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="65" Width="315" FontSize="40" FontFamily="Javanese Text"/>
+        <PasswordBox x:Name="passBox" HorizontalAlignment="Left" Margin="10,210,0,-152" Password="" VerticalAlignment="Top" Width="380" Height="48" FontSize="26.667"/>
+        <TextBlock x:Name="captchaBlock" HorizontalAlignment="Left" Margin="10,280,0,-239" TextWrapping="Wrap" Text="Captcha" VerticalAlignment="Top" Height="65" Width="315" FontSize="40" FontFamily="Javanese Text"/>
+        <Image x:Name="captcha" HorizontalAlignment="Left" Height="73" Margin="36,350,0,-317" VerticalAlignment="Top" Width="289"/>
+        <TextBox x:Name="captchaBox" HorizontalAlignment="Left" Margin="10,428,0,-370" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222" Height="48" FontSize="26.667"/>
+        <Button x:ConnectionId='1' x:Name="signin" Content="Sign In" HorizontalAlignment="Left" Margin="281,418,0,-379" VerticalAlignment="Top" Height="67"                     />
+        <Grid x:Name="loading" HorizontalAlignment="Left" Height="526" Margin="10,111,0,-531" VerticalAlignment="Top" Width="380" Visibility="Collapsed">
+            <Image gif:AnimationBehavior.SourceUri="loading3.gif" Margin="0,-38,0,0"/>
+            <TextBlock x:Name="status" HorizontalAlignment="Left" Margin="10,307,0,0" Text="" VerticalAlignment="Top" FontSize="13.333" TextAlignment="Center" Width="360" Height="18"/>
+        </Grid>
+    </Grid>
+</Page>
+

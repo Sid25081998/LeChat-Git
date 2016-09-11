@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="V_Bunk.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:V_Bunk"
+    xmlns:gif="using:XamlAnimatedGif"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/Backgrounds/LOwyR.png" Stretch="UniformToFill" Opacity="0.6"/>
+    </Page.Background>
+    <Page.BottomAppBar>
+        <CommandBar Name="mainBar" Background="Transparent">
+            <AppBarButton x:ConnectionId='1' Name="signin"  Icon="Accept" Label="Sign In"                     />
+        </CommandBar>
+    </Page.BottomAppBar>
+    <ScrollViewer x:Name="scrlViewer">
+        <Grid x:Name="Main" Margin="0,0,0,0">
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Grid Name="Content" Margin="0,0,0,0">
+                <Image x:Name="Logo" HorizontalAlignment="Left" Height="233" Margin="93,10,0,0" VerticalAlignment="Top" Width="227" Source="Assets/Square150x150Logo.png"/>
+                <TextBlock x:Name="appName" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="FFCS Login" VerticalAlignment="Top" Height="27" Width="117" FontSize="20"/>
+                <TextBox x:ConnectionId='2' x:Name="regBox" Text="Registration No." Margin="41,241,34,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" Height="38" FontSize="26.667" BorderThickness="0"                                                         Background="White" HorizontalAlignment="Center" BorderBrush="Black" Foreground="Black"/>
+                <PasswordBox x:ConnectionId='3' x:Name="passBox" HorizontalAlignment="Left" Margin="41,276,0,0" Password="......." VerticalAlignment="Top" Width="325" Height="38" FontSize="26.667" BorderThickness="0,2.5,0,0" Background="White"                                                           Foreground="Black" BorderBrush="Black"/>
+                <Image x:Name="captcha" HorizontalAlignment="Left" Height="37" Margin="40,323,0,0" VerticalAlignment="Top" Width="128" Stretch="Fill"/>
+                <TextBox x:ConnectionId='4' x:Name="captchaBox" HorizontalAlignment="Left" Margin="168,323,0,0" TextWrapping="Wrap" Text="Captcha" VerticalAlignment="Top" Width="197" Height="37" FontSize="26.667" InputScope="Default" BorderThickness="0,0,0,2.5" Background="White"                                                                />
+            </Grid>
+            <Grid x:Name="loading" HorizontalAlignment="Left" Height="570" Margin="0,0,0,0" VerticalAlignment="Top" Width="400" Visibility="Collapsed">
+                <Image gif:AnimationBehavior.SourceUri="loading_gif.gif" Margin="304,573,-6,-70" Name="loadPic"/>
+                <TextBlock x:Name="status" HorizontalAlignment="Left" Margin="10,307,0,0" Text="" VerticalAlignment="Top" FontSize="13.333" TextAlignment="Center" Width="360" Height="18"/>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>
+
