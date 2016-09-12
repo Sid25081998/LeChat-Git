@@ -1,9 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="s:\projects\windows phone\le chat\le chat\obj\debug\intermediatexaml\le chat.exe" HashGuid="145f40c9-9714-363d-c623-84ca81bf0ac7" />
-    <ReferenceAssembly PathName="s:\projects\windows phone\le chat\packages\coding4fun.toolkit.controls.2.1.8\lib\wpa81\coding4fun.toolkit.controls.dll" HashGuid="59d41119-b0fc-e517-99f8-ac3c6de0d72e" />
-    <ReferenceAssembly PathName="s:\projects\windows phone\le chat\packages\coding4fun.toolkit.controls.2.1.8\lib\wpa81\coding4fun.toolkit.dll" HashGuid="119685b3-f018-829b-095c-510e7d2a3a28" />
-    <ReferenceAssembly PathName="s:\projects\windows phone\le chat\packages\newtonsoft.json.9.0.1\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="424e6aa8-ba94-c678-e707-af9fe9838e1a" />
-    <ReferenceAssembly PathName="s:\projects\windows phone\le chat\packages\xamlanimatedgif.1.1.3\lib\portable-win81+wpa81\xamlanimatedgif.dll" HashGuid="6ba9dc30-72ac-261f-d8ba-25d4e1430d55" />
+    <ReferenceAssembly PathName="s:\projects\github\lechat-git\le chat\packages\newtonsoft.json.9.0.1\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="424e6aa8-ba94-c678-e707-af9fe9838e1a" />
+    <ReferenceAssembly PathName="s:\projects\github\lechat-git\le chat\packages\xamlanimatedgif.1.1.3\lib\portable-win81+wpa81\xamlanimatedgif.dll" HashGuid="6ba9dc30-72ac-261f-d8ba-25d4e1430d55" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

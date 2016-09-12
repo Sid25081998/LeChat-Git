@@ -15,13 +15,12 @@
             <AppBarButton x:Name="signup" Icon="AddFriend"  Label="Sign Up" Click="signup_Click"/>
         </CommandBar>
     </Page.BottomAppBar>
-    <Grid Margin="0,0.333,0,-60.333">
-        <Grid x:Name="content">
-            <TextBlock x:Name="PageHead" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Height="88" Width="295" FontSize="66.667"/>
+    <Grid x:Name="content">
+        
+        <TextBlock x:Name="PageHead" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Height="88" Width="295" FontSize="66.667"/>
             <TextBlock x:Name="userBlock" HorizontalAlignment="Left" Margin="10,98,0,0" TextWrapping="Wrap" Text="User Name" VerticalAlignment="Top" Width="295" FontSize="26.667"/>
-            <TextBox x:Name="userBox" Text="Sid" HorizontalAlignment="Left" Margin="10,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="26.667" />
+            <TextBox x:Name="userBox" HorizontalAlignment="Left" Margin="10,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="26.667" />
             <TextBlock x:Name="passBlock" HorizontalAlignment="Left" Margin="10,174,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="26.667"/>
-            <TextBox x:Name="passBox" Text="Sid" HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667" Width="380"/>
+            <TextBox x:Name="passBox" HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667" Width="380"/>
         </Grid>
-    </Grid>
 </Page>

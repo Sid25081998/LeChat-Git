@@ -133,7 +133,6 @@
     <Content Include="Assets\StoreLogo.scale-240.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="person-icon-blue-12.png" />
-    <Content Include="ReadMe.Coding4Fun.Toolkit.txt" />
     <Content Include="user.png" />
   </ItemGroup>
   <ItemGroup>
@@ -159,14 +158,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Coding4Fun.Toolkit, Version=2.0.8.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.1.8\lib\wpa81\Coding4Fun.Toolkit.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Coding4Fun.Toolkit.Controls, Version=2.1.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.1.8\lib\wpa81\Coding4Fun.Toolkit.Controls.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>

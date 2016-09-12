@@ -113,7 +113,7 @@ namespace Le_Chat
                         }
                         else
                         {
-                            await new MessageDialog("Wrong Credentials").ShowAsync();
+                            await new MessageDialog("Invalid Credentials").ShowAsync();
                         }
                         break;
                     case "Register":
